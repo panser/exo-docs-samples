@@ -1,0 +1,9 @@
+<div style="background-color: navy; font-size: 18px; padding: 15px; color: white">
+    <span>ACME Intranet</span>
+</div>
+<div>
+    <%uicomponent.renderChildren();%>
+</div>
+<div style="text-align: center; background-color: wheat; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px">
+    <span style="font-style: italic">Powered by eXo Platform</span>
+</div>

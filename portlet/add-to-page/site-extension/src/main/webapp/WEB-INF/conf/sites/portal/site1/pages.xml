@@ -6,16 +6,32 @@ xmlns="http://www.gatein.org/xml/ns/gatein_objects_1_2">
 		<title>Home Page</title>
 		<access-permissions>*:/platform/users</access-permissions>
 		<edit-permission>*:/platform/administrators</edit-permission>
-		<portlet-application>
-			<portlet>
-				<application-ref>hello-portlet</application-ref>
-				<portlet-ref>Hello</portlet-ref>
-			</portlet>
-			<title>Hello</title>
-			<access-permissions>*:/platform/users</access-permissions>
-			<show-info-bar>false</show-info-bar>
-			<show-application-state>false</show-application-state>
-			<show-application-mode>false</show-application-mode>
-		</portlet-application>
+		<!--<portlet-application>-->
+			<!--<portlet>-->
+				<!--<application-ref>hello-portlet</application-ref>-->
+				<!--<portlet-ref>Hello</portlet-ref>-->
+			<!--</portlet>-->
+			<!--<title>Hello</title>-->
+			<!--<access-permissions>*:/platform/users</access-permissions>-->
+			<!--<show-info-bar>false</show-info-bar>-->
+			<!--<show-application-state>false</show-application-state>-->
+			<!--<show-application-mode>false</show-application-mode>-->
+		<!--</portlet-application>-->
+
+		<container id="MyPageContainer" template="war:/groovy/container/MySiteLayoutContainer.gtmpl">
+			<move-apps-permissions>*:/platform/administrators</move-apps-permissions>
+			<move-containers-permissions>*:/platform/administrators</move-containers-permissions>
+			<portlet-application>
+				<portlet>
+					<application-ref>homepage-portlets</application-ref>
+					<portlet-ref>GettingStartedPortlet</portlet-ref>
+				</portlet>
+				<title>Getting Started</title>
+				<access-permissions>*:/platform/users</access-permissions>
+				<show-info-bar>false</show-info-bar>
+				<show-application-state>false</show-application-state>
+				<show-application-mode>false</show-application-mode>
+			</portlet-application>
+		</container>
 	</page>
 </page-set>
