@@ -11,10 +11,14 @@
             <init-params>
                 <values-param>
                     <name>init.resources</name>
+                    <description>Store the following resources into the db for the first launch</description>
                     <value>locale.portal.sample</value>
                 </values-param>
                 <values-param>
                     <name>portal.resource.names</name>
+                    <description>The properties files of the portal , those files will be merged
+                        into one ResourceBundle properties
+                    </description>
                     <value>locale.portal.sample</value>
                 </values-param>
             </init-params>
