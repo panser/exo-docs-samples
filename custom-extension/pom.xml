@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.exoplatform.samples</groupId>
 	<artifactId>custom-extension</artifactId>
-	<version>4.2.x</version>
+	<version>4.3.x</version>
 	<packaging>pom</packaging>
 	<name>custom-extension-pom</name>
 	<description>The sample custom-extension</description>
@@ -15,8 +15,8 @@
 	</modules>
 
 	<properties>
-		<project.version>4.2.x</project.version>
-		<exoplatform.version>4.2.0</exoplatform.version>
+		<project.version>4.3.x</project.version>
+		<exoplatform.version>4.3.0</exoplatform.version>
 	</properties>
 
 	<dependencyManagement>
